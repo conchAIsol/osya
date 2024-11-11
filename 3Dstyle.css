@@ -1,0 +1,369 @@
+
+body {
+height: 100%; overflow: hidden
+}
+
+
+
+{
+    overflow: hidden;
+}
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+	cursor: url('misc_images/cursor/Normal.png'), default;
+	cursor: url('misc_images/cursor/Normal.png'), pointer;
+}
+
+@font-face {
+  font-family: finalFontasy;
+  src: url(psx-lain-type.ttf);
+}
+
+
+#icons 
+{
+	z-index:7;
+  top: 5px;
+  left: 20px;
+  position: absolute;
+}
+
+
+#icons button {
+	font-weight: bold;
+	text-shadow: 0px 0px #040423;
+	background-color: transparent;
+	border-style: none;
+
+	color: #C8CEFF;
+	margin-right: 5px;
+	margin: 0.20rem 0.2rem 9rem 0rem;
+	padding: 3px;
+	min-width: 50px;
+	min-height: 20px;
+	padding-top: 0px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 0px;
+
+}
+
+#icons button:hover {
+	font-weight: bold;
+	text-shadow: 0px 0px #040423;
+	background-color: #8a99af;
+	border-style: outset;
+	border-color: #8a99af;
+	color: #050526;
+
+}
+#icons button:active {
+	font-weight: bold;
+	text-shadow: 0px 0px #040423;
+	background-color: #304870;
+	border-style: inset;
+	border-color: #8a99af;
+	color: #C8CEFF;
+
+}
+
+
+#icons p {
+
+	text-shadow: 0px 0px #040423;
+	background-color: #C0C0C0;
+	border-style: outset;
+	border-color: #DFDFDF;
+	color: #050526;
+	margin-right: 5px;
+	margin: 0.20rem 0.2rem 0.2rem 0rem;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 0px;
+}
+
+#icons h2 {
+	font-weight: normal;
+	text-shadow: 0px 0px #040423;
+	background-color: #C0C0C0;
+	border-style: outset;
+	border-color: #DFDFDF;
+	color: #050526;
+
+	margin: -1.5rem 0.4rem 0.2rem 0rem;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 0px;
+	box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#borderimg {
+	pointer-events: none;
+	z-index: 15;
+  position: absolute;
+	width: 100%;
+	height: 102%;
+	image-rendering: pixelated;
+	
+}
+
+#headerimg {
+	
+	z-index: 10;
+
+    position: absolute;
+	right: 0;
+	
+	top: -33px;
+image-rendering: pixelated;
+}
+
+
+#mainWindow {
+
+	position: absolute;
+z-index: 5;
+  width: 98%;
+	height: 99%;
+	margin-left: 1%;
+	margin-top: 0.8%;
+
+}
+
+#indicator {
+
+	position: fixed;
+	z-index: 5;
+	width: 24vw;
+	left: 75.5vw;
+	top: 10vh;
+	
+	height: 10vh;
+
+}
+
+#indImg {
+
+	
+	width: 25vw;
+
+	height: 100%;
+
+}
+
+#indText {
+	white-space: nowrap;
+	color: #00a878;
+	 font-family: finalFontasy;
+	font-size: 2.75vh;
+	margin-left: 13.5vw;
+	margin-top: -4.5vh;
+}
+
+
+#winBorder {
+	margin: 9%;
+	margin-top: 4%;
+	position: absolute;
+		width: 82%;
+	height: 82%;
+
+}
+
+#navNext {
+
+	position: absolute;
+ margin-top: 20%;
+ padding: 10%;
+ margin-left: 75%;
+  width: 5vw;
+	height: 3vh;
+	image-rendering: pixelated;
+
+}
+
+
+
+#navBack {
+
+	position: absolute;
+ margin-top: 20%;
+ padding: 10%;
+
+  width: 5vw;
+	height: 3vh;
+	image-rendering: pixelated;
+
+}
+
+
+#scroll-container {
+position: absolute;
+  overflow: hidden;
+  	width: 23.55vw;
+	margin-left: 0.25vw;
+	margin-top: -9vh;
+}
+
+#scroll-container2 {
+position: absolute;
+  overflow: hidden;
+  	width: 23.55vw;
+	margin-left: 0.25vw;
+	margin-top: -9vh;
+}
+
+#scrollText {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: scrollAnim 11s linear infinite;
+  -webkit-animation: scrollAnim 11s linear infinite;
+  animation: scrollAnim 11s linear infinite;
+  
+  
+  	white-space: nowrap;
+	color: #00a878;
+	 font-family: finalFontasy;
+	font-size: 2.3vh;
+
+}
+
+#scrollText2 {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: scrollAnim 11s linear infinite;
+  -webkit-animation: scrollAnim 11s linear infinite;
+  animation: scrollAnim 11s linear infinite;
+  
+	animation-delay: 5.5s;
+  	white-space: nowrap;
+	color: #00a878;
+	 font-family: finalFontasy;
+	font-size: 2.3vh;
+
+}
+
+
+#intro {
+	width:100%;
+	height:100%;
+	position: absolute;
+	color: #00a878;
+		 font-family: finalFontasy;
+	font-size: 2.3vh;
+	background-color: black;
+	background-image: url("misc_images/bg.gif");
+			background-size: cover;
+		background-attachment: fixed;
+	z-index: 100;
+}
+
+#centerTxt{
+	border-color: #04AA6D;
+	border: solid;
+	background-color: black;
+	margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top:20%;
+}
+
+
+#loadGif{
+	margin: auto;
+  max-width: 5%;
+  text-align: center;
+  margin-top:5%;
+ 
+}
+
+#oyaLogo{
+	
+	margin: auto;
+  max-width: 70%;
+  text-align: center;
+  margin-top: -70%;
+	margin-bottom: 10%;
+ 
+}
+
+#navi{
+	position: absolute;
+	
+	
+ 
+}
+
+pre {
+	left: -10vmin;
+	position: fixed;
+	font-size: 1.3vmin;
+}
+
+
+
+#centerTxt button {
+	margin-top: 1vh;
+	background-color: #04AA6D;
+	font-family: finalFontasy;
+	font-size: 1.5vh;
+	border-color: #2B1D3A;
+	padding: 10px;
+	 display: none;
+	margin-bottom: 20px;
+}
+
+#centerTxt button:hover {
+	margin-top: 1vh;
+	background-color: #04AA6D;
+	font-family: finalFontasy;
+	font-size: 1.5vh;
+	border-color: #04AA6D;
+	padding: 10px;
+	 display: none;
+	margin-bottom: 20px;
+}
+
+/* for Firefox */
+@-moz-keyframes scrollAnim {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes scrollAnim {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes scrollAnim {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-500%);
+    -webkit-transform: translateX(-500%);
+    transform: translateX(-500%);
+  }

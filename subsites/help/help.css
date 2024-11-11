@@ -1,0 +1,64 @@
+body {
+
+	color: white;
+	background-color: black;
+}
+
+@font-face {
+  font-family: dosFont;
+  src: url(MorePerfectDOSVGA.ttf);
+}
+
+#outerDiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background: black;
+		
+}
+
+
+#mainDiv {
+	margin-top: -2vmin;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background: black;
+	height: 100%;
+	border: solid;
+	border-width: 1vmin;
+	border-color: white;
+
+}
+
+#header {
+	
+	color: white;
+	text-align: center;
+
+	font-size: 1vmin;
+	
+}
+
+.subHeader  {
+	color: white;
+	text-align: center;
+	margin-top: -0vmin;
+	font-size: 1.25vmin;
+	
+}
+
+#mainDiv p {
+	font-size: 1vmin;
+	font-family: dosFont;
+	
+	font-size: 2vmin;
+	padding-left: 3.5vmin;
+}
+
+#mainDiv hr {
+margin-top: -2vmin;
+text-align: center;
+width: 95%;
+color:white;
+}

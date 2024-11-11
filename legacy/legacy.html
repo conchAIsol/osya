@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide Website</title>
+	<script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+    <link id="theme" href="../legacy/style.css?" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body>
+
+
+	<div class="flex-container">
+			<div id="nav-placeholder">
+			</div>
+
+
+			<div class="main-flex">
+					<!-- The Main Header -->
+				<div class="header">
+					<h1>Are You Sure You Want To Go Back?</h1>
+					<div class="icons" id="iconset">
+						<button type="button" class="collapsible">🗕</button>
+						<button type="button">🗖</button>
+						<button type="button">✖</button>
+
+					</div>
+				</div>
+					<!-- The Main Section -->
+				<div class="main">
+
+					<h1>Welcome, Fellow Websurfer.</h1>
+					
+
+
+					<p> Please enjoy your stay here and feel free to look about.</p>
+
+					<p>Who knows what you may find here in this little corner of the web? <br>
+					The only way to find out is to explore and, most importantly, to have fun. </p>
+
+					
+					<p> This site is a constant work in progress as i attempt to refine my coding skills. <br> Make sure to come back often to see what's new! </p>
+
+						<div class="subdiv" style="float:right; position: relative; margin: -12rem 0.2rem 0.2rem 0rem; width: 18rem">
+							<h1> future.gif </h1>
+							<div class="clearfix">
+								<img class="imgalign" src="../legacy/misc/lain_stand.gif" style="margin: 0rem 1rem 0rem 0rem; height: 300px;" >
+							</div>
+						</div>
+				<div id="winamp-placeholder">
+
+				</div>
+
+
+
+				
+
+				</div>
+
+					<!-- The Main Update Header -->
+					<div class="header">
+						<h1>Latest Updates</h1>
+						<div class="icons" id="iconset2">
+								<button type="button" class="collapsible">🗕</button>
+								<button type="button">🗖</button>
+								<button type="button">✖</button>
+
+						</div>
+					</div>
+					<!-- The Update Section -->
+
+					<div class="main">
+					
+					
+						<div class="subdiv">
+							<h1>A New Update Has Released - Ver 17/09/24 Release</h1>
+							<p>- Long time no see!<br>
+								- The page you are viewing is the site as it appeared prior to 17/09/24<br>
+								- This version of the site will no longer be updated <br>
+								- Please look around the new site! I hope you enjoy it! <br>
+								- ♱♡‿♡♰
+								</p>
+							<!-- Aligns Image Properly -->
+							<div class="clearfix">
+								<img class="imgalign" src="	../legacy/misc/butterflygoodbye.gif" style="width: 200px;">
+							</div>
+							<div class="icons" style="justify-content: center;" >
+								<h2>Update Now</h2>
+								<h2>Schedule Update</h2>
+								<h2>Cancel</h2>
+							</div>	
+						</div>
+					
+						<div class="subdiv">
+							<h1>A New Update Has Released - Ver 05/03/23 Beta</h1>
+							<p>- Back after a short break!<br>
+								- Finally updated the about page! Check it out!<br>
+								- Added Hebobin <br>
+								- （っ＾▿＾）
+								</p>
+							<!-- Aligns Image Properly -->
+							<div class="clearfix">
+								<img class="imgalign" src="../legacy/misc/aboutmebutton.gif" style="width: 200px;">
+							</div>
+							<div class="icons" style="justify-content: center;" >
+								<h2>Update Now</h2>
+								<h2>Schedule Update</h2>
+								<h2>Cancel</h2>
+							</div>	
+						</div>
+
+						<div class="subdiv">
+							<h1>A New Update Has Released - Ver 25/02/23 Beta</h1>
+							<p>- Redesigned the welcome section. Still a pretty big WIP though.<br>
+								- Created a Windows 98 style file navigation system. <br>
+								- Added a 'Characters' page. Check it out to see the nav system in action! <br>
+								- Added Hebobin <br>
+								- (👍≖‿‿≖)👍 
+								</p>
+							<!-- Aligns Image Properly -->
+							<div class="clearfix">
+								<img class="imgalign" src="../legacy/misc/yellow_file.gif" style="width: 100px;">
+							</div>
+							<div class="icons" style="justify-content: center;" >
+								<h2>Update Now</h2>
+								<h2>Schedule Update</h2>
+								<h2>Cancel</h2>
+							</div>	
+						</div>
+					
+
+
+
+
+
+						
+					</div>
+
+					
+					
+					
+				<!-- The Footer! -->
+
+				<div id="foot-placeholder">
+
+				</div>
+
+
+
+
+			</div>	
+			<div id="chatbox" > </div>
+
+
+	<div>
+
+				<script>
+					$(function(){
+						$("#chatbox").load("../legacy/templates/chatbox.html");
+						$("#foot-placeholder").load("../legacy/templates/footer.html");
+						$("#nav-placeholder").load("../legacy/templates/sidebar.html");
+						$("#winamp-placeholder").load("../legacy/templates/winamp.html");
+
+					});
+
+
+					var coll = document.getElementsByClassName("collapsible");
+					var i;
+
+					for (i = 0; i < coll.length; i++) {
+					  coll[i].addEventListener("click", function() {
+
+						var header = this.parentElement.parentElement;
+						var content = this.parentElement.parentElement.nextElementSibling;
+						if (content.style.display === "none") {
+							header.className = "header"
+
+
+							content.style.display = "block";
+						} else {
+							content.style.display = "none";
+							header.className = "headerToggle"
+						}
+					  });
+					}
+
+				</script>
+
+
+  </body>
+</html>

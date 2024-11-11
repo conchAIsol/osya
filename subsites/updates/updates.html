@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>World Wide Website</title>
+		<script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+		<link id="theme" href="style.css?" rel="stylesheet" type="text/css" media="all">
+		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+		  {
+			"imports": {
+			  "three": "https://unpkg.com/three@0.152.1/build/three.module.js",
+			  "three/addons/": "https://unpkg.com/three@0.152.1/examples/jsm/"
+			}
+		  }
+		</script>
+
+	</head>
+	<body> 
+		<div class="dateAndTime">
+				<p id="date"> </p>
+				<p id="time"> </p>
+		</div>
+			
+		<div id="cssFix">
+		
+			<div class="update">
+				<h1> 11/11/2024 </h1>
+				We're going live on pump.fun today.
+			</div>
+		
+		
+			<div class="update">
+				<h1> 10/11/2024 </h1>
+				Site has been migrated to custom domain. Please let me know if anything breaks!<br> Introductory page updated. Also updated the Index!
+			</div>
+		
+			<div class="update">
+				<h1> 9/11/2024 </h1>
+				Many small updates and tweaks to the Index and Navigation pages. <br> Resolution of 3D elements lowered to emulate early 3D software <br> Index page scaling fixed, cookies added to decrease waiting.
+			</div>
+			
+		</div>
+			
+			<script type="module" src="updates.js"></script>
+			
+			<script>
+				var currentDate = new Date();
+				var month = (currentDate.getMonth() +1).toString();
+				var day = currentDate.getDate().toString();
+				var year = currentDate.getFullYear().toString();
+				
+				
+				
+				var hours;
+				var  minutes;
+				var seconds;
+				const intervalId = setInterval(updateTime,1000);
+				
+				function updateTime() {
+					currentDate = new Date();
+					hours = currentDate.getHours().toString();
+					minutes = currentDate.getMinutes().toString();
+					seconds = currentDate.getSeconds().toString();
+					if (seconds <10) {
+						seconds = "0" + seconds
+					}
+					if (hours <10) {
+						hours = "0" + hours
+					}
+					if (minutes <10) {
+						minutes = "0" + minutes
+					}
+
+					
+					document.getElementById("time").innerHTML = `${hours}:${minutes}:${seconds}`;
+					
+				}
+				
+				if (month <10) {
+					month = "0" + month
+				}
+				if (day <10) {
+					day = "0" + day
+				}
+				document.getElementById("time").innerHTML = "Loading...";
+				document.getElementById("date").innerHTML = `${day}/${month}/${year}`;
+
+			</script>
+  </body>
+</html>
+

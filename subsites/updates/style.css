@@ -1,0 +1,74 @@
+body{
+
+		background:  #0d0e19;
+		color: white;
+		    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: Helvetica, sans-serif;
+	text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+
+	cursor: url('../../../misc_images/cursor/Normal.png'), default;
+	cursor: url('../../../misc_images/cursor/Normal.png'), pointer;
+
+}
+.update
+{
+	font-size: 25px;
+  float: right;
+
+  width: 65%;
+	
+  padding: 10px;	
+  margin-bottom: 50px;
+  color: white;
+  transition: 0.5s;
+}
+
+*
+{
+	cursor: url('../../../misc_images/cursor/Normal.png'), default;
+	cursor: url('../../../misc_images/cursor/Normal.png'), pointer;
+}
+
+.update:hover {
+		width: 70%;
+		font-size: 35px;
+		color: #6caac3;
+}
+
+.update h1 {
+	margin: 0px;
+	color: yellow;
+}	
+
+
+
+.dateAndTime {
+		font-size: 25px;
+		display: flex;
+		flex-direction: row;
+		color: #c7c5d0;
+		width: 100%;
+		justify-content: space-between;
+		position:absolute;
+}
+
+#date {
+	margin-left: 25px;
+		align-self:flex-start;
+}
+
+#time {
+	margin-right: 25px;
+	align-self:flex-end;
+}
+
+#cssFix {
+	margin-top: 5%;
+	position:absolute;
+	overflow:scroll;
+	height: 90%;
+	width:100%
+}
