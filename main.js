@@ -31,7 +31,6 @@ composer.addPass( renderPass );
 
 //Displays the window-in-window when a site button is pressed
 function createWindow(link) {
-	btnClickSFX.play();
 	isClosing = false;
 	hi = 0;
 	pos = 75.5;
@@ -67,7 +66,6 @@ var loadingGif = document.getElementById("loadGif");
 acceptBtn.addEventListener("click", function() {
 	isIntroOpen = false;
 	document.getElementById("intro").remove();
-	btnClickSFX.play();
 	bgm.play();
 	
 });
@@ -587,7 +585,7 @@ const onMouseClick = (event) => {
 		}else if(intersects[0].object.userData.code != null){
 			
 			eval(intersects[0].object.userData.code)
-			btnClickSFX.play();
+			
 		}
 		
 	}
