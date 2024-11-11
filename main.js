@@ -581,7 +581,7 @@ const onMouseClick = (event) => {
 		else if(intersects[0].object.userData.link != null){
 			currentWindow = intersects[0].object.userData.link
 			createWindow(currentWindow)
-			btnClickSFX.play();
+			
 		}else if(intersects[0].object.userData.code != null){
 			
 			eval(intersects[0].object.userData.code)
