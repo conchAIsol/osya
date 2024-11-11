@@ -38,6 +38,11 @@ function createWindow(link) {
 	 var borderColl = document.getElementsByClassName("hideMe");
 	var bi;
 
+	for (bi = 0; bi < borderColl.length; bi++) {
+			console.log("ran")
+				footColl[bi].parentElement.parentElement.parentElement.style.display = "initial";	  
+	}
+
 	
 	
 
